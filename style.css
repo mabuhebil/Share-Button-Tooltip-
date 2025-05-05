@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #7979e6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container .up {
+    width: 150px;
+    background-color: #fff;
+    padding: 12px 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    position: relative;
+    transform: translateY(25px);
+}
+
+.container .up::after {
+    position: absolute;
+    content: "";
+    background-color: #fff;
+    width: 0;
+    height: 0;
+    border: 20px solid #fff;
+    border-bottom: none;
+    border-left: transparent;
+    transform: rotate(45deg);
+    bottom: -7px;
+    left: 65px;
+}
+
+.container .up i {
+    color: #7979e6;
+    font-size: 18px;
+
+}
+
+.container .up .fa-facebook {
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+}
+
+.container .up .fa-facebook:hover {
+    color: blue;
+    transform: translateY(-30%);
+}
+
+.container .up .fa-twitter {
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+}
+
+.container .up .fa-twitter:hover {
+    color: rgb(105, 105, 231);
+    transform: translateY(-30%);
+}
+
+.container .up .fa-instagram {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.container .up .fa-instagram:hover {
+    color: blue;
+    transform: translateY(-30%);
+}
+
+.container .up .fa-youtube {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.container .up .fa-youtube:hover {
+    color: red;
+    transform: translateY(-30%);
+}
+
+.container .down {
+    position: relative;
+    color: #7979e6;
+    background-color: #fff;
+    width: 100px;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 20px;
+    margin-left: 25px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+
+.container .down:hover {
+    letter-spacing: 1px;
+}
+
+.container .down label {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+
+#chex {
+    display: none;
+}
+
+.container .up {
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+#chex:checked~.up {
+    opacity: 1;
+
+}
+
+.container .down label::before {}
